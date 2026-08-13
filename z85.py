@@ -29,11 +29,16 @@ def convert_z85_to_raw(raw_file_path, z85_file_path):
             print(raw_line, file=raw_file)
 
 
-RAW_FILE_PATH='...'
-Z85_FILE_PATH='...'
+RAW_FILE_PATH='./raw.txt'
+Z85_FILE_PATH='./z85.txt'
 
 if __name__ == '__main__':
-    convert_raw_to_z85(
-        RAW_FILE_PATH,
-        Z85_FILE_PATH
-    )
+    # convert_raw_to_z85(
+    #     RAW_FILE_PATH,
+    #     Z85_FILE_PATH
+    # )
+    # convert_z85_to_raw(
+    #     RAW_FILE_PATH,
+    #     Z85_FILE_PATH
+    # )
+    pass
