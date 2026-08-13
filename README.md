@@ -1,19 +1,32 @@
 # in-case-of-emergency
 
+_Shell commands are for nu-shell._
+
+## Decrypt
+
+```shell
+(gpg
+    --decrypt
+    --output ./decrypted/ice.tar
+    ./encrypted/ice.tar.gpg)
+```
+
+
 -----
 
-# Archive
+## Every year or so
+
+### Archive
 
 ```shell
 (tar
     --create
     --strip-components 1
     --file ./archived/ice.tar
-    ./data/*)
+    ./raw/*)
 ```
 
-
-# Encrypt
+### Encrypt
 
 ```shell
 (gpg
@@ -23,13 +36,4 @@
     ./archived/ice.tar)
 ```
 
-
-# Decrypt
-
-```shell
-(gpg
-    --decrypt
-    --output ./decrypted/ice.tar
-    ./encrypted/ice.tar.gpg)
-```
 
